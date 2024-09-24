@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Block</title>
+</head>
+
+<body>
+    <header class="fixed top-0 right-0 left-0 z-10 bg-[#F9F7F3]">
+        <section class="w-11/12 mx-auto px-2 py-6 rounded-lg">
+            <div class="flex justify-between items-center">
+                <div class="flex justify-center items-center">
+                    <button id="home-id" class="btn bg-black text-white font-semibold">Home</button>
+                </div>
+                <div class="flex justify-center items-center">
+                    <img src="assets/logo.png" alt="logo">
+                    <h2 class="px-2">Donate Bangaldesh</h2>
+                </div>
+                <div class="flex justify-center items-center px-2">
+                    <img src="./assets/coin.png" alt="coin-png">
+                    <h2 class="text-[#111111B3] px-2">
+                        <span id="account-balance">5500</span> BDT
+                    </h2>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="mt-28 w-11/12 mx-auto">
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>
+                    The Document Object Model (DOM) is a programming interface for web documents. It represents the
+                    structure of an HTML or XML document as a tree of objects, where each node in the tree corresponds
+                    to a part of the document (e.g., elements, attributes, and text content). This allows developers to
+                    interact with, manipulate, and update the document's structure, style, and content dynamically via
+                    programming languages, most commonly JavaScript.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>To select an element from the DOM, you typically use JavaScript methods provided by the document
+                    object. Here are the most common ways to select elements</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>
+                    Event delegation is a technique in the DOM where a single event listener is attached to a parent
+                    element to manage events for its child elements, rather than attaching individual listeners to each
+                    child. This works because events in the DOM bubble up (or propagate) from the target element (where
+                    the event occurred) to its parent and then up through ancestors until they reach the root of the
+                    document.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 mb-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>
+                    If you want to change other attributes like id , href , or src , you can use the
+                    setAttribute() method. The setAttribute() method accepts two arguments: The name of the
+                    attribute to set. The value of the attribute to set.</p>
+            </div>
+        </div>
+    </main>
+    <script src="./js/block.js"></script>
+</body>
+
+</html>
